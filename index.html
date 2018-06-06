@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/lib/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="assets/lib/jquery-3.3.1.min.js"></script>
+  <title>Document</title>
+</head>
+<body>
+<!--SCOREBOARD-->
+<div class="card col-md-4 col-sm-6 col-xs-12 col-lg-3 mb-2"id="score">
+            <div class="card-body">
+                <h4 class="card-title py-3">SCORE</h4>
+                    <div class="scores">
+                      <kbd class="right_answers"></kbd><kbd class="total_answers"></kbd>
+                    </div>
+                      <p class="percent1">Your percentage of correct answers is <span class="percentage"></span><span class="hi">%</span> </p>
+                      <button class="btn btn-primary" id="newgame">NEW GAME</button>
+            </div>
+</div>
+<!--QUESTIONS and OPTIONS-->
+<div class="card col-md-4 col-sm-6 col-xs-12 col-lg-3 triviabody">
+            <div class="card-body">
+                          <h4 class="card-title py-3">TRIVIA</h4>
+                    <div class="choose">
+                        <button class="btn btn-primary go" type="submit">GO!</button>
+                    </div>
+                    <hr>
+                      <kbd class="category"></kbd>
+                    <hr>
+                          <p class="card-text"></p>
+                              <div class="options">
+                                <button class="option1 option btn btn-outline-primary btn-block" name="option_1"></button>
+                                <button class="option2 option btn btn-outline-primary btn-block"name="option_2"></button>
+                                <button class="option3 option btn btn-outline-primary btn-block mb-5"name="option_3"></button>
+                              </div>
+            <button class="btn btn-primary endgame">END GAME</button>
+            </div>
+ </div>
+<script type="text/javascript" src="assets/trivia.js"></script>
+</body>
+</html>

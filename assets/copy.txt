@@ -1,0 +1,88 @@
+//var categ="";
+
+$(".cat").hover(function(){
+  categ=this.name;
+  // console.log(categ);
+localStorage.setItem("category",categ);
+
+
+});
+var local=localStorage.getItem("category");
+
+//localStorage.clear();
+//console.log(typeof(localint));
+console.log(local);
+$("button[name=local]").css("color","red");
+/*$("button[name="local"]").click(function(){
+  //let categ=this.name;
+//  console.log(this);
+//console.log(localStorage.getItem("category"));
+document.location.reload();
+  $.ajax({
+    method:"GET",
+    url:"https://opentdb.com/api.php?amount=1&type=multiple&category="+categ
+    //"https://opentdb.com/api.php?amount=1&type=multiple&category="+categ
+    //console.log(url);
+  })
+  .done(function(data){
+    $("h5").css("display","none");
+    $(".cat").css("display","none");
+    $(".category").text(data.results[0].category);
+    $(".card-text").html(data.results[0].question);
+    $("hr").css("display","block");
+    $("kbd").css("display","block");
+    $(".next").text("NEXT");
+    $(".options").css("display","block");
+    let rand=Math.floor(Math.random()*6);
+    console.log(rand);
+    if(rand<2&&rand>=0){
+      $(".option1").html(data.results[0].correct_answer);
+      $(".option2").html(data.results[0].incorrect_answers[0]);
+      $(".option3").html(data.results[0].incorrect_answers[1]);
+      }
+    else if (rand>=2&&rand<4) {
+      $(".option2").html(data.results[0].correct_answer);
+      $(".option3").html(data.results[0].incorrect_answers[0]);
+      $(".option1").html(data.results[0].incorrect_answers[1]);
+      }
+    else{
+      $(".option3").html(data.results[0].correct_answer);
+      $(".option2").html(data.results[0].incorrect_answers[0]);
+      $(".option1").html(data.results[0].incorrect_answers[1]);
+      }
+      $(".option1").click(function(){
+        if($(".option1").html()===data.results[0].correct_answer){
+        $(".option1").removeClass("btn-outline-primary");
+        $(".option1").addClass("btn-success");
+        $("button[name="localStorage.getItem('category')"]").trigger('click', true);
+            setTimeout(function(){
+               $(".option1").removeClass("btn-success");
+               $(".option1").addClass("btn-outline-primary");
+             },1500);
+          }
+      });
+      $(".option2").click(function(){
+        if($(".option2").html()===data.results[0].correct_answer){
+        $(".option2").removeClass("btn-outline-primary");
+        $(".option2").addClass("btn-success");
+        $("button[name="localStorage.getItem('category')"]").trigger('click', true);
+              setTimeout(function(){
+                $(".option2").removeClass("btn-success");
+                $(".option2").addClass("btn-outline-primary");
+              },1500);
+         }
+      });
+      $(".option3").click(function(){
+        if($(".option3").html()===data.results[0].correct_answer){
+        $(".option3").removeClass("btn-outline-primary");
+        $(".option3").addClass("btn-success");
+        $("button[name="localStorage.getItem('category')"]").trigger('click', true);
+               setTimeout(function(){
+                 $(".option3").removeClass("btn-success");
+                 $(".option3").addClass("btn-outline-primary");
+               },1500);
+          }
+      });
+  })
+});
+*/

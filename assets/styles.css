@@ -1,0 +1,77 @@
+body{
+  background: #0f0c29;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.card{
+  margin: 0 auto;
+  top: 100px;
+}
+.card-title{
+  text-align: center;
+}
+.card-subtitle{
+  display: none;
+}
+.card-body:nth-child(n+1){
+  text-align: center;
+}
+hr{
+  display: none;
+}
+.cat{
+  padding: 2px;
+  margin: 2px;
+  display: grid;
+grid-auto-flow: dense;
+}
+kbd{
+  display: none;
+}
+.scores{
+  display: inline-flex;
+}
+#score{
+  display: none;
+}
+.percent1{
+  display: none;
+}
+.percentage{
+  font-size: 20px;
+  font-weight: bold;
+  color: purple;
+}
+.hi{
+  color: purple;
+  font-size: 20px;
+  font-weight: bold;
+}
+#newgame{
+  display: none;
+  margin: 0 auto;
+}
+kbd.right_answers{
+  background-color: green;
+}
+.options{
+  display: none;
+}
+.option1 .option2 .option3{
+  max-width: 400px;
+  word-wrap: break-word;
+}
+button.endgame{
+  display: none;
+  margin: 0 auto;
+}
+.option:focus{
+  border-top-color: none;
+  border-bottom-color: none;
+  border-left-color: none;
+  border-right-color: none;
+  box-shadow: none;
+}
+.go{
+  border-radius: 50px;
+}
